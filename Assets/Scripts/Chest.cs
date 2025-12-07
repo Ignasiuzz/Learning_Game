@@ -7,7 +7,6 @@ public class Chest : MonoBehaviour, IIteractable
     public GameObject itemPrefab;
     public Sprite openedSprite;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         ChestID ??= GlobalHelper.GenerateUniqueID(gameObject);

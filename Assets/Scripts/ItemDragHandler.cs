@@ -8,7 +8,6 @@ public class ItemDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     Transform originalParent;
     CanvasGroup canvasGroup;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         canvasGroup = GetComponent<CanvasGroup>();

@@ -9,7 +9,6 @@ public class MenuController : MonoBehaviour
     public GameObject menuCanvas;
     public TMP_Text saveButtonText;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         menuCanvas.SetActive(true);

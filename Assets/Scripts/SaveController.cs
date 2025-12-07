@@ -9,7 +9,6 @@ public class SaveController : MonoBehaviour
     private string saveLocation;
     private InventoryController inventoryController;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
@@ -31,7 +30,7 @@ public class SaveController : MonoBehaviour
     }
 
     public void LoadGame()
-    {
+    {   
         if (File.Exists(saveLocation))
         {
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
