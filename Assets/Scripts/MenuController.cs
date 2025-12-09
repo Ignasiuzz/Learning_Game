@@ -53,6 +53,6 @@ public class MenuController : MonoBehaviour
     public void OnExitGame()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        // UnityEditor.EditorApplication.isPlaying = false;
     }
 }
